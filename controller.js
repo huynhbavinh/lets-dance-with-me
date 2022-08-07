@@ -16,7 +16,11 @@ let score = 1;
 popupWelcome();
 
 function popupWelcome() {
-    if (confirm("Are you readyyy!")) {
+    const msg = `Are you readyyy!
+        dùng 2 phím mũi tên để giữ thăng bằng cho tớ nhé
+        và nhúng nhảy theo nhạc nèo
+    `
+    if (confirm(msg)) {
         document.getElementById('myAudio').autoplay = true;
         overview.style.display = 'block';
     } else {
